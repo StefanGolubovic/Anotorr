@@ -15,7 +15,7 @@ func main() {
 	self := Node.InitializeNode()
 
 	//Javljam se trekeru; treker se vrti kod mene na kompu
-	tAddr, err := net.ResolveTCPAddr("tcp", "24.135.223.112:9095")
+	tAddr, err := net.ResolveTCPAddr("tcp", "172.20.10.8:9095")
 	Node.CheckError(err)
 
 	conn, err := net.DialTCP("tcp",nil, tAddr)
